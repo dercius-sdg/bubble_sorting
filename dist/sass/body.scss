@@ -1,0 +1,26 @@
+body
+{
+    background-color: #DEB887;
+    h1,h2
+    {
+        font-family: "Lora";
+        color: #542a11;
+    }
+    h1
+    {
+      font-weight: 600;
+    }
+    h2
+    {
+        font-weight: 400;
+    }
+    p,li,label,input
+    {
+       font-family: "Roboto";
+    }
+}
+
+.title
+{
+    text-align: center;
+}

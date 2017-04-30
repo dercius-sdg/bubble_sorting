@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Графическая сортировка</title>
+    <script src="public/js/vendor/jquery.min.js"></script>
+    <script src="public/js/build.js"></script>
+    <link rel="stylesheet" href="/public/css/build.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+<h1 class="title">Анимированная сортировка пузырьком</h1>
+<h2 class="description-header">Описание использования</h2>
+<p class="description-content">Для алгоритма сортировки пузырьком необходимо  выполнить следующие действия:
+    <ol class="description-content-list">
+        <li class="description-content-list-item">Ввести значение элемента сортируемого поля массива в соотвествующее поле ниже</li>
+        <li class="description-content-list-item">Нажать кнопку &quot;Добавить&quot;</li>
+        <li class="description-content-list-item">При количестве элементов в массиве больше двух, нажать кнопку &quot;Запустить сортировку&quot;</li>
+    </ol>
+<p>
+<p class="description-content">После запуска алгоритма результат сортировки будет отображаться ниже в графе &quot;Сортируемый массив&quot;.
+Каждый шаг итерации можно будет просмотреть будет просмотреть в графе &quot;Результаты сортировки&quot;
+</p>
+<form id="data-form">
+    <label>Добавляемое значение: <input type="number" class="data-form-number"></label>
+    <input id="addButton" type="button" class="data-form-button" value="Добавить">
+    <input id="runButton" type="button" class="data-form-button" disabled value="Запустить сортировку">
+</form>
+<h2 class="sorting-array-title">Сортируемый массив</h2>
+<ul class="sorting-array">
+</ul>
+<h2 class="result-stages-title">Результаты сортировки</h2>
+<ul class="result-stages">
+    <li class="result-stages-item"></li>
+    <li class="result-stages-item"></li>
+    <li class="result-stages-item"></li>
+</ul>
+</body>
+</html>

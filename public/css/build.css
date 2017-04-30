@@ -1,0 +1,49 @@
+body {
+  background-color: #DEB887; }
+  body h1, body h2 {
+    font-family: "Lora";
+    color: #542a11; }
+  body h1 {
+    font-weight: 600; }
+  body h2 {
+    font-weight: 400; }
+  body p, body li, body label, body input {
+    font-family: "Roboto"; }
+
+.title {
+  text-align: center; }
+.description-content {
+  font-weight: 400;
+  font-size: 12pt;
+  text-align: justify; }
+
+.description-header {
+  text-align: center; }
+.result-stages-title {
+  text-align: center; }
+
+.result-stages {
+  list-style: none;
+  margin-bottom: 150px; }
+.sorting-array {
+  display: block;
+  width: 400px;
+  min-height: 100px;
+  margin: 0 auto;
+  list-style: none;
+  position: relative; }
+  .sorting-array .sorting-array-item {
+    display: block;
+    position: absolute;
+    margin: 0 150px;
+    width: 100px;
+    text-align: center; }
+  .sorting-array .sorting-array-item_correct {
+    color: #7fff00;
+    top: 0; }
+  .sorting-array .sorting-array-item_incorrect {
+    color: #dc143c;
+    top: 50px; }
+
+.sorting-array-title {
+  text-align: center; }

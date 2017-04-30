@@ -1,0 +1,31 @@
+.sorting-array
+{
+  display: block;
+  width: 400px;
+  min-height: 100px;
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+  .sorting-array-item
+  {
+    display: block;
+    position: absolute;
+    margin: 0 150px;
+    width: 100px;
+    text-align: center;
+  }
+  .sorting-array-item_correct
+  {
+      color: #7fff00;
+      top:0;
+  }
+  .sorting-array-item_incorrect
+  {
+    color: #dc143c;
+    top:50px;
+  }
+}
+.sorting-array-title
+{
+    text-align: center;
+}
