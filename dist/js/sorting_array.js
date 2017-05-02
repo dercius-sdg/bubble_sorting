@@ -18,7 +18,7 @@ class SortingArrayComponent
         if(this.getCount()>=2) {
             this._array.height(this._array.height() + 50); // увеличиваем высоту родительского элемента
         }
-        element.appendTo(this._array);// добавляем элемент в массив
+        element.appendTo(this._array);// добавляем элемент в массив, со сохранненым значением и элементом к которому это значение привязано
         this._numberArray.push({
             element:element,
             value:value
@@ -46,7 +46,7 @@ class SortingArrayComponent
                 queue:"mix-animation"
             };
         firstElement
-            .animate(
+            .animate( //делаем элемент красным
                 {
                     color:"#dc143c"
                 },
@@ -54,54 +54,54 @@ class SortingArrayComponent
             )
             .animate(
             {
-                left:"+=50"
+                left:"+=50" // сдвигаем элемент влево
             },
             animationProp
             )
             .animate(
             {
-                top:secondElement.css("top")
+                top:secondElement.css("top") // сдвигаем элемент вниз на позицию второго элемента
             },
             animationProp
         ).
         animate(
             {
-                left:"-=50"
+                left:"-=50" // сдвигаем элемент вправо
             },
             animationProp
         )
             .animate(
             {
-                color:"black"
+                color:"black" // затемняем элемент
             },
             animationProp
             );
         secondElement
             .animate(
             {
-                color:"#dc143c"
+                color:"#dc143c" //делаем элемент красным
             },
             animationProp
             )
             .animate(
             {
-                right:"+=50"
+                right:"+=50" // сдвигаем элемент вправо
             },
             animationProp
         ).animate(
             {
-                top:firstElement.css("top")
+                top:firstElement.css("top") // сдвигаем элемент вверх
             },
             animationProp
         ).
         animate(
             {
-                right:"-=50"
+                right:"-=50" //сдвигаем элемент обратно влево
             },
             animationProp
         ).animate(
             {
-                color:"black"
+                color:"black" // делаем элемент черным
             },
             animationProp
         );

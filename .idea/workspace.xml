@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4690ec0-33e7-46c5-9311-5f19d2ec3695" name="Default" comment="Added commentary for classes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/js/bubble.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/bubble.js" afterPath="$PROJECT_DIR$/dist/js/bubble.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/build.js" afterPath="$PROJECT_DIR$/dist/js/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/data_form.js" afterPath="$PROJECT_DIR$/dist/js/data_form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/result-stages.js" afterPath="$PROJECT_DIR$/dist/js/result-stages.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/sorting_array.js" afterPath="$PROJECT_DIR$/dist/js/sorting_array.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/sass/sorting_array.scss" afterPath="$PROJECT_DIR$/dist/sass/sorting_array.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/webpack/lib/BasicEvaluatedExpression.js" afterPath="$PROJECT_DIR$/node_modules/webpack/lib/BasicEvaluatedExpression.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/webpack/lib/dependencies/AMDDefineDependencyParserPlugin.js" afterPath="$PROJECT_DIR$/node_modules/webpack/lib/dependencies/AMDDefineDependencyParserPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlockParserPlugin.js" afterPath="$PROJECT_DIR$/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlockParserPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/build.css" afterPath="$PROJECT_DIR$/public/css/build.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/build.js" afterPath="$PROJECT_DIR$/public/js/build.js" />
     </list>
     <ignored path="dercius.test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,115 +43,30 @@
     <favorites_list name="dercius.test" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6954503">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
-                  <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#1010#1016#0" expanded="true" />
-                    <element signature="e#1024#1030#0" expanded="true" />
-                    <element signature="e#1148#1154#0" expanded="true" />
-                    <element signature="e#1174#1180#0" expanded="true" />
-                    <element signature="e#1308#1314#0" expanded="true" />
-                    <element signature="e#1332#1338#0" expanded="true" />
-                    <element signature="e#1392#1398#0" expanded="true" />
-                    <element signature="e#1419#1425#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dist/js/build.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="260">
-                  <caret line="10" column="114" lean-forward="true" selection-start-line="10" selection-start-column="114" selection-end-line="10" selection-end-column="114" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sorting_array.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dist/js/sorting_array.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2106">
-                  <caret line="81" column="51" lean-forward="false" selection-start-line="81" selection-start-column="51" selection-end-line="81" selection-end-column="51" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bubble.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/dist/js/bubble.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1344">
-                  <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webpack.config.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
-                  <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="description.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dist/sass/description.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="body.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dist/sass/body.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="624">
-                  <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sorting_array.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/dist/sass/sorting_array.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="279">
-                  <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="results-stages.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/dist/sass/results-stages.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="20" lean-forward="true" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+              <folding>
+                <element signature="e#1392#1398#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result-stages.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dist/js/result-stages.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="18" column="74" lean-forward="true" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -177,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SCSS/indexesPage.scss" />
         <option value="$PROJECT_DIR$/index.phtml" />
         <option value="$PROJECT_DIR$/PHP Files/phpinfo.php" />
         <option value="D:/php-7.0.4/php.ini" />
@@ -222,12 +128,13 @@
         <option value="$PROJECT_DIR$/public/js/build.js" />
         <option value="$PROJECT_DIR$/dist/sass/results-stages.scss" />
         <option value="$PROJECT_DIR$/dist/sass/data_form.scss" />
-        <option value="$PROJECT_DIR$/dist/sass/sorting_array.scss" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/dist/js/sorting_array.js" />
         <option value="$PROJECT_DIR$/dist/js/data_form.js" />
+        <option value="$PROJECT_DIR$/dist/sass/sorting_array.scss" />
         <option value="$PROJECT_DIR$/dist/js/build.js" />
+        <option value="$PROJECT_DIR$/dist/js/sorting_array.js" />
         <option value="$PROJECT_DIR$/dist/js/bubble.js" />
+        <option value="$PROJECT_DIR$/dist/js/result-stages.js" />
       </list>
     </option>
   </component>
@@ -302,21 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="dercius.test">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,6 +236,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dercius.test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dercius.test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -403,6 +309,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dercius.test">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -439,7 +360,7 @@
       <recent name="S:\www\dercius.test\JS Scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Unknown.dercius.test52363683">
+  <component name="RunManager" selected="Unknown.dercius.test1833525040">
     <configuration default="false" name="index.phtml" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.phtml">
       <method />
     </configuration>
@@ -531,11 +452,12 @@
       <updated>1454008965326</updated>
       <workItem from="1493468182355" duration="25819000" />
       <workItem from="1493582805677" duration="19660000" />
+      <workItem from="1493758920034" duration="556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45479000" />
+    <option name="totallyTimeSpent" value="46035000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -550,17 +472,15 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2410148" sideWeight="0.496063" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2410148" sideWeight="0.496063" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33373493" sideWeight="0.50951374" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.4947146" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972437" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34578314" sideWeight="0.49048626" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2167382" sideWeight="0.503937" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978677" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -568,11 +488,13 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1674" height="896" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32520324" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15618102" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978677" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -671,7 +593,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/babel-cli/bin/babel.js" />
     <entry file="file://$PROJECT_DIR$/public/js/test.js.map" />
     <entry file="file://$PROJECT_DIR$/Babel_files/test.js" />
     <entry file="file://$PROJECT_DIR$/SCSS/delegate.scss" />
@@ -722,10 +643,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/sass/body.scss">
+    <entry file="file://$PROJECT_DIR$/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/dist/sass/data_form.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="78">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2262">
+          <caret line="87" column="56" lean-forward="false" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="9" column="107" lean-forward="false" selection-start-line="9" selection-start-column="107" selection-end-line="9" selection-end-column="107" />
           <folding />
         </state>
       </provider>
@@ -738,75 +675,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/dist/sass/body.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/sass/data_form.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/sass/results-stages.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="true" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+        <state relative-caret-position="448">
+          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2262">
-          <caret line="87" column="56" lean-forward="false" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
-          <folding>
-            <marker date="1493718348000" expanded="true" signature="8153:8156" ph="/*...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="e#1010#1016#0" expanded="true" />
-            <element signature="e#1024#1030#0" expanded="true" />
-            <element signature="e#1148#1154#0" expanded="true" />
-            <element signature="e#1174#1180#0" expanded="true" />
-            <element signature="e#1308#1314#0" expanded="true" />
-            <element signature="e#1332#1338#0" expanded="true" />
-            <element signature="e#1392#1398#0" expanded="true" />
-            <element signature="e#1419#1425#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/sass/sorting_array.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="20" />
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/sass/results-stages.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/js/sorting_array.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2106">
-          <caret line="81" column="51" lean-forward="false" selection-start-line="81" selection-start-column="51" selection-end-line="81" selection-end-column="51" />
+        <state relative-caret-position="520">
+          <caret line="20" column="139" lean-forward="false" selection-start-line="20" selection-start-column="139" selection-end-line="20" selection-end-column="139" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/bubble.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2262">
+          <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -819,18 +731,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/build.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="114" lean-forward="true" selection-start-line="10" selection-start-column="114" selection-end-line="10" selection-end-column="114" />
-          <folding />
+        <state relative-caret-position="598">
+          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="e#1392#1398#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/bubble.js">
+    <entry file="file://$PROJECT_DIR$/dist/js/result-stages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1344">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="399">
+          <caret line="18" column="74" lean-forward="true" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
           <folding />
         </state>
       </provider>

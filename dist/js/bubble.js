@@ -59,11 +59,11 @@ class BubbleSorting
             }
             else
             {
-                let array=this.component.getNumberArray().map((object)=>
+                let array=this.component.getNumberArray().map((object)=> // извлекаем из объекта массива массив значений
                 {
                     return object.value;
                 });
-                this.component.logComponent.addElement(array);
+                this.component.logComponent.addElement(array); // выводим массив на компонент лога
                 if(options.outerCounter<options.maxSize-2) // проверяем пройдена ли итерация по внешнему счетчику
                 {
                     options.outerCounter++; //увеличиваем внешний счетчик
@@ -77,7 +77,7 @@ class BubbleSorting
                 this.component.animateMix(index-1,index);
         }.bind(this);
 
-        this.component.logComponent.clearComponent();
+        this.component.logComponent.clearComponent(); // очищаем лог сортировки
         const arrayLength=this.component.getNumberArray().length; // получаем количество элементов в массиве
         let options= // создаем объект с передаваемымм значениями для функции markElements
             {
