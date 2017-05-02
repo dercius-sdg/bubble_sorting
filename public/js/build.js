@@ -118,12 +118,42 @@ class DataFormComponent
 "use strict";
 __webpack_require__(8);
 
-class SortingArrayComponent
+class ResultStagesComponent
 {
     constructor()
     {
+        this.list=$('.result-stages');
+    }
+    clearComponent()
+    {
+        this.list.empty();
+    }
+    addElement(array)
+    {
+        let element=$(document.createElement('li'));
+        element.addClass('result-stages-item');
+        element.text(array);
+        element.appendTo(this.list);
+        element.fadeIn(1000);
+    }
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (ResultStagesComponent);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__(9);
+
+class SortingArrayComponent
+{
+    constructor(logComponent)
+    {
         //сохраняем ссылку на DOM-элемент с массивом
         this._array=$('.sorting-array');
+        this.logComponent=logComponent;
         this._numberArray=[]; // создаем свойство с хранимыми значениями элемента массива
     }
     insertElementIntoArray(value) // элемент для вставки нового элемента в массив
@@ -136,7 +166,10 @@ class SortingArrayComponent
             this._array.height(this._array.height() + 50); // увеличиваем высоту родительского элемента
         }
         element.appendTo(this._array);// добавляем элемент в массив
-        this._numberArray.push(value);
+        this._numberArray.push({
+            element:element,
+            value:value
+        });
     }
     getNumberArray() //метод возвращает числовой массив сохраненных значений
     {
@@ -148,24 +181,31 @@ class SortingArrayComponent
     }
     getElementByIndex(index) //получаем элемент массива по индексу
     {
-        return this._array.find('.sorting-array-item')[index]
+        return this.getNumberArray()[index].element;
     }
     animateMix(firstElementIndex,secondElementIndex) //метод заставляющий менять местами элементы массива с индексами переданными в качестве параметров
     {
-        let firstElement=this.getElementByIndex(firstElementIndex); //получаем первый элемент
-        let secondElement=this.getElementByIndex(secondElementIndex); //получаем второй элемент
+        let firstElement=$(this.getElementByIndex(firstElementIndex)); //получаем первый элемент
+        let secondElement=$(this.getElementByIndex(secondElementIndex)); //получаем второй элемент
         let animationProp= // данный объект является объектом с передаваемыми параметрами анимации которые передаются в метод animate
             {
                 duration:600,
-                easing:"ease-in",
                 queue:"mix-animation"
             };
-        firstElement.animate(
+        firstElement
+            .animate(
+                {
+                    color:"#dc143c"
+                },
+                animationProp
+            )
+            .animate(
             {
                 left:"+=50"
             },
             animationProp
-        ).animate(
+            )
+            .animate(
             {
                 top:secondElement.css("top")
             },
@@ -176,8 +216,21 @@ class SortingArrayComponent
                 left:"-=50"
             },
             animationProp
-        );
-        secondElement.animate(
+        )
+            .animate(
+            {
+                color:"black"
+            },
+            animationProp
+            );
+        secondElement
+            .animate(
+            {
+                color:"#dc143c"
+            },
+            animationProp
+            )
+            .animate(
             {
                 right:"+=50"
             },
@@ -193,6 +246,11 @@ class SortingArrayComponent
                 right:"-=50"
             },
             animationProp
+        ).animate(
+            {
+                color:"black"
+            },
+            animationProp
         );
         firstElement.dequeue("mix-animation"); //запускаем анимацию для первого элемента
         secondElement.dequeue("mix-animation"); // запускаем анимацию для второго элемента
@@ -201,12 +259,6 @@ class SortingArrayComponent
     }
 }
 /* harmony default export */ __webpack_exports__["a"] = (SortingArrayComponent);
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 3 */
@@ -235,7 +287,7 @@ class BubbleSorting
     sortArray()
     {
         let markElements= function (options) {
-            let color=(this.component.getNumberArray()[options.innerCounter-1] <this.component.getNumberArray()[options.innerCounter]) ?"#7fff00":"#dc143c";
+            let color=(this.component.getNumberArray()[options.innerCounter-1].value <=this.component.getNumberArray()[options.innerCounter].value) ?"#7fff00":"#dc143c";
             //получаем выделяемый цвет : "зеленый" если сортировочный порядок правильный и "красный" если он не правильный
             if(color=="#7fff00") // если порядок правильный то просто подсвечиваем элементы
             {
@@ -252,49 +304,59 @@ class BubbleSorting
             else // если порядок неправильный то подсвечиваем и меняем местами
             {
                 $(this.component.getElementByIndex(options.innerCounter - 1))
-                    .animate({color: color}, {
-                        start: function () {
+                    .animate({},{
+                        done:function () {
                             $(this.component.getElementByIndex(options.innerCounter))
-                                .animate({color: color})
-                                .animate({color: "black"});
+                                .animate({color:"black"}); // одновременно затемняем цвет соседнего элемента массива
                         }.bind(this),
-                        complete:shiffleElements(options.innerCounter) //перемешиваем элементы массива
+                        complete:function()
+                        {
+                            setTimeout(()=>{shiffleElements(options.innerCounter);},700);
+                             //перемешиваем элементы массива
+                        }
                     })
-                    .delay(2800)
+                    .delay(4000)
                     .animate({color: "black"}, animateProp);
             }
         }.bind(this); // делаем привязку контекста
 
-        let animateProp={ //объект описывающий поведение анимации в окончательном состоянии для каждой итерации
+        let animateProp={//объект описывающий поведение анимации в окончательном состоянии для каждой итерации
             start:function () {
                 $(this.component.getElementByIndex(options.innerCounter))
                     .animate({color:"black"}); // одновременно затемняем цвет соседнего элемента массива
             }.bind(this),
             complete:function () { // рекурсивная функция для обхода по массиву
-                setTimeout(()=>{ //добавляем задержку для плавного перехода
-                    if (options.innerCounter>1) // если внутренний счетчик не дошел до конца массива то повторяем
-                    {
-                        options.innerCounter--; //уменьшаем индекс искомоего элемента в массива
-                        markElements(options); //запускаем рекурсию
-                    }
-                    else
-                    {
-                        if(options.outerCounter<options.maxSize) // проверяем пройдена ли итерация по внешнему счетчику
-                        {
-                            //сюда вставляем код для записи лога обработки на страницу
-                            options.outerCounter++; //увеличиваем внешний счетчик
-                            options.innerCounter=options.maxSize-options.outerCounter-1; //заново присваем внутренний счетчик и запускаем по повторному кругу сортировки
-                            markElements(options);
-                        }
-                    }
-                },500)
-            }
+                setTimeout(completeFunc,500);
+            }.bind(this)
         };
+
+        let completeFunc=function () { //добавляем задержку для плавного перехода
+            if (options.innerCounter>1) // если внутренний счетчик не дошел до конца массива то повторяем
+            {
+                options.innerCounter--; //уменьшаем индекс искомоего элемента в массива
+                markElements(options); //запускаем рекурсию
+            }
+            else
+            {
+                let array=this.component.getNumberArray().map((object)=>
+                {
+                    return object.value;
+                });
+                this.component.logComponent.addElement(array);
+                if(options.outerCounter<options.maxSize-2) // проверяем пройдена ли итерация по внешнему счетчику
+                {
+                    options.outerCounter++; //увеличиваем внешний счетчик
+                    options.innerCounter=options.maxSize-options.outerCounter-1; //заново присваем внутренний счетчик и запускаем по повторному кругу сортировки
+                    markElements(options);
+                }
+            }
+        }.bind(this);
 
         let shiffleElements=function (index) { //функция запускающая анимацию смены элементов местами
                 this.component.animateMix(index-1,index);
         }.bind(this);
 
+        this.component.logComponent.clearComponent();
         const arrayLength=this.component.getNumberArray().length; // получаем количество элементов в массиве
         let options= // создаем объект с передаваемымм значениями для функции markElements
             {
@@ -316,17 +378,19 @@ class BubbleSorting
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_form_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sorting_array_js__ = __webpack_require__(1);
-__webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sorting_array_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__result_stages__ = __webpack_require__(1);
 __webpack_require__(3);
 __webpack_require__(4);
 
  //импортируем компоненты
 
 
+
 $().ready(()=>
 {
-    let sdComponent=new __WEBPACK_IMPORTED_MODULE_1__sorting_array_js__["a" /* default */](); // подключаем компонент отвественный за отображения массива
+    let rsComponent= new __WEBPACK_IMPORTED_MODULE_2__result_stages__["a" /* default */]();
+    let sdComponent=new __WEBPACK_IMPORTED_MODULE_1__sorting_array_js__["a" /* default */](rsComponent); // подключаем компонент отвественный за отображения массива
     let dfComponent= new __WEBPACK_IMPORTED_MODULE_0__data_form_js__["a" /* default */](sdComponent); // подключаем компонент отвечающий за элементы управления
 })
 
@@ -340,6 +404,12 @@ $().ready(()=>
 
 /***/ }),
 /* 8 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

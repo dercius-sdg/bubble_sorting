@@ -5,5 +5,23 @@
 .result-stages
 {
     list-style: none;
-    margin-bottom: 150px;
+    margin: 25px auto 150px;
+    padding: 0;
+    width: 350px;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    .result-stages-item
+    {
+        display: none;
+        height: 50px;
+        width: 350px;
+        text-align: center;
+        line-height: 50px;
+        margin: 5px 0;
+        font-family: Roboto;
+        font-size: 16pt;
+        letter-spacing: 3px;
+        font-weight: 300;
+    }
 }

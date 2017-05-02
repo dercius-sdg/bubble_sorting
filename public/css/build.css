@@ -12,19 +12,23 @@ body {
 
 .title {
   text-align: center; }
+
+html {
+  height: 100%; }
 .description-content {
   font-weight: 400;
   font-size: 12pt;
-  text-align: justify; }
+  text-align: justify;
+  padding: 0 7px 0 5px; }
 
 .description-header {
   text-align: center; }
-.result-stages-title {
-  text-align: center; }
-
-.result-stages {
-  list-style: none;
-  margin-bottom: 150px; }
+#data-form {
+  margin: 50px auto;
+  width: 700px; }
+  #data-form input {
+    font-family: Roboto;
+    font-size: 12pt; }
 .sorting-array {
   display: block;
   width: 400px;
@@ -48,3 +52,31 @@ body {
 
 .sorting-array-title {
   text-align: center; }
+.result-stages-title {
+  text-align: center; }
+
+.result-stages {
+  list-style: none;
+  margin: 25px auto 150px;
+  padding: 0;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .result-stages .result-stages-item {
+    display: none;
+    height: 50px;
+    width: 350px;
+    text-align: center;
+    line-height: 50px;
+    margin: 5px 0;
+    font-family: Roboto;
+    font-size: 16pt;
+    letter-spacing: 3px;
+    font-weight: 300; }

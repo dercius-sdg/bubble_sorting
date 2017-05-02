@@ -2,10 +2,11 @@ require('../sass/sorting_array.scss');
 
 class SortingArrayComponent
 {
-    constructor()
+    constructor(logComponent)
     {
         //сохраняем ссылку на DOM-элемент с массивом
         this._array=$('.sorting-array');
+        this.logComponent=logComponent;
         this._numberArray=[]; // создаем свойство с хранимыми значениями элемента массива
     }
     insertElementIntoArray(value) // элемент для вставки нового элемента в массив
@@ -18,7 +19,10 @@ class SortingArrayComponent
             this._array.height(this._array.height() + 50); // увеличиваем высоту родительского элемента
         }
         element.appendTo(this._array);// добавляем элемент в массив
-        this._numberArray.push(value);
+        this._numberArray.push({
+            element:element,
+            value:value
+        });
     }
     getNumberArray() //метод возвращает числовой массив сохраненных значений
     {
@@ -30,24 +34,31 @@ class SortingArrayComponent
     }
     getElementByIndex(index) //получаем элемент массива по индексу
     {
-        return this._array.find('.sorting-array-item')[index]
+        return this.getNumberArray()[index].element;
     }
     animateMix(firstElementIndex,secondElementIndex) //метод заставляющий менять местами элементы массива с индексами переданными в качестве параметров
     {
-        let firstElement=this.getElementByIndex(firstElementIndex); //получаем первый элемент
-        let secondElement=this.getElementByIndex(secondElementIndex); //получаем второй элемент
+        let firstElement=$(this.getElementByIndex(firstElementIndex)); //получаем первый элемент
+        let secondElement=$(this.getElementByIndex(secondElementIndex)); //получаем второй элемент
         let animationProp= // данный объект является объектом с передаваемыми параметрами анимации которые передаются в метод animate
             {
                 duration:600,
-                easing:"ease-in",
                 queue:"mix-animation"
             };
-        firstElement.animate(
+        firstElement
+            .animate(
+                {
+                    color:"#dc143c"
+                },
+                animationProp
+            )
+            .animate(
             {
                 left:"+=50"
             },
             animationProp
-        ).animate(
+            )
+            .animate(
             {
                 top:secondElement.css("top")
             },
@@ -58,8 +69,21 @@ class SortingArrayComponent
                 left:"-=50"
             },
             animationProp
-        );
-        secondElement.animate(
+        )
+            .animate(
+            {
+                color:"black"
+            },
+            animationProp
+            );
+        secondElement
+            .animate(
+            {
+                color:"#dc143c"
+            },
+            animationProp
+            )
+            .animate(
             {
                 right:"+=50"
             },
@@ -73,6 +97,11 @@ class SortingArrayComponent
         animate(
             {
                 right:"-=50"
+            },
+            animationProp
+        ).animate(
+            {
+                color:"black"
             },
             animationProp
         );

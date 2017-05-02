@@ -33,7 +33,26 @@ module.exports=
                         test:/\.scss$/,
                         use: scssExtractPlugin.extract({
                             fallback: "style-loader",
-                            use: ["css-loader","sass-loader"]
+                            use: [
+                                    {
+                                        loader: 'css-loader',
+                                        options: {
+                                            importLoaders: 1
+                                        }
+                                    },
+                                    {
+                                        loader: 'postcss-loader',
+                                        options: {
+                                            plugins: function () {
+                                                return [
+                                                    require('autoprefixer')
+                                                ];
+                                            }
+                                        }
+                                    },
+                                    'sass-loader'
+                                ]
+                                //["css-loader","sass-loader"]
                         })
                     },
                     {
