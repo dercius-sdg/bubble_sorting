@@ -5,7 +5,8 @@ class SortingArrayComponent
     constructor()
     {
         //сохраняем ссылку на DOM-элемент с массивом
-        this.array=$('.sorting-array');
+        this._array=$('.sorting-array');
+        this._numberArray=[]; // создаем свойство с хранимыми значениями элемента массива
     }
     insertElementIntoArray(value) // элемент для вставки нового элемента в массив
     {
@@ -14,9 +15,14 @@ class SortingArrayComponent
         element.text(value); // устанавливаем переданное значение
         element.attr('style',"top:"+this.getCount()*50+"px"); // устанавливаем положение в контейнере относительно вверха
         if(this.getCount()>=2) {
-            this.array.height(this.array.height() + 50); // увеличиваем высоту родительского элемента
+            this._array.height(this._array.height() + 50); // увеличиваем высоту родительского элемента
         }
-        element.appendTo(this.array); // добавляем элемент в массив
+        element.appendTo(this._array);// добавляем элемент в массив
+        this._numberArray.push(value);
+    }
+    getNumberArray() //метод возвращает числовой массив сохраненных значений
+    {
+        return this._numberArray;
     }
     getCount() // метод возвращает количество всех элементов массива
     {
@@ -24,7 +30,7 @@ class SortingArrayComponent
     }
     getElementByIndex(index) //получаем элемент массива по индексу
     {
-        return this.array.find('.sorting-array-item')[index]
+        return this._array.find('.sorting-array-item')[index]
     }
     animateMix(firstElementIndex,secondElementIndex) //метод заставляющий менять местами элементы массива с индексами переданными в качестве параметров
     {
@@ -72,14 +78,8 @@ class SortingArrayComponent
         );
         firstElement.dequeue("mix-animation"); //запускаем анимацию для первого элемента
         secondElement.dequeue("mix-animation"); // запускаем анимацию для второго элемента
-    }
-    toggleAsCorrect(index) // метод переключает отображение элемент массива как правильно отсортированного
-    {
-        this.getElementByIndex(index).toggleClass('.sorting-array-item_correct');
-    }
-    toggleAsIncorrect(index) // метод переключает отображение элемент массива как неправильно отсортированного
-    {
-        this.getElementByIndex(index).toggleClass('.sorting-array-item_incorrect');
+        [this._numberArray[firstElementIndex],this._numberArray[secondElementIndex]]=[this._numberArray[secondElementIndex],this._numberArray[firstElementIndex]];
+        //меняем местами элементы числового массива
     }
 }
 export default SortingArrayComponent

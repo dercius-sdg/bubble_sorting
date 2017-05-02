@@ -37,7 +37,8 @@ body {
     position: absolute;
     margin: 0 150px;
     width: 100px;
-    text-align: center; }
+    text-align: center;
+    transition: color 1s ease; }
   .sorting-array .sorting-array-item_correct {
     color: #7fff00;
     top: 0; }
